@@ -6,3 +6,4 @@ cache
 *.pyc
 npm-debug.log
 .vagrant
+.DS_Store

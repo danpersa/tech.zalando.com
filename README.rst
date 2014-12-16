@@ -23,11 +23,13 @@ Please make sure your blog post contains all necessary meta information (in the 
 Getting started
 ===============
 
-You need Docker_ (should also work now with latest version of boot2docker and Docker 1.3):
+You need Git and Docker_ to build static HTML (should also work now with latest version of boot2docker and Docker 1.3+):
 
 .. code-block:: bash
 
-    $ docker run -u $(id -u) -v $(pwd):/workdir -t hjacobs/nikola build
+    $ git clone https://github.com/zalando/tech.zalando.com.git
+    $ cd tech.zalando.com
+    $ docker run -v $(pwd):/workdir -t hjacobs/nikola build
 
 Now open the generated HTML files in the "output" directory.
 

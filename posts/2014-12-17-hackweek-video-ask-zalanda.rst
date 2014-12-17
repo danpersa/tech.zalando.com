@@ -8,7 +8,8 @@
 .. type: text
 .. image: hackweek3-ask-zalanda.jpg
 
-Customer satisfaction is key to Zalando. We're always looking at new ways to improve our service. Zalanda is a friendly voice that you can take with you wherever you go. 
+Customer satisfaction is key to Zalando. We're always looking at new ways to improve our service. This group uses Artificial Intelligence to create Zalanda, a friendly voice which you can take with you wherever you go. 
+
 .. TEASER_END
 
 .. youtube:: SvCK13gxrT8

@@ -5,11 +5,11 @@
 .. author: Jan Mussler
 .. image: zmon2.png
 
-Some time ago we already presented `our PostgreSQL database monitoring tool`_, but today it is time to show you how we monitor the other parts of the ZEOS platform. For that particular purpose during the past months ZMON was developed to enable basically everyone at Zalando to monitor relevant services and define his own alerting on top of it.
+Some time ago we already presented `our PostgreSQL database monitoring tool`_, but today it's time to unveil how we monitor the other parts of the ZEOS platform. During the past months ZMON was developed to enable almost everyone at Zalando to monitor relevant services and define his or her own alerting on top of it.
 
 .. TEASER_END
 
-Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMON. However, that setup did not scale with the growing number of services and more important with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
+Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMon. However, that setup did not scale with the growing number of services and more importantly with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
 
 
 Introducing ZMON
@@ -30,15 +30,15 @@ The schedulers and any number of workers communicate using Redis lists, the sche
 Problems..
 ==========
 
-There were some problems along the way: We first used Celery as a task broker with Redis, however we did not manage to make it run fast enough, and in the end we did not really need a big framework if all we wanted was encode some task in JSON and fire and forget it into the queue. So Celery was dropped, significantly improving the throughput. Unfortunately this period of problems created a bad memories, that one really should avoid if tries to sell a new monitoring solution where people put their trust in. Second, the scheduler is in Python, too, and with the growing number of checks and entities, our implementation for scheduling combined with some cleanup tasks and background threads for refreshing data, was no longer fast enough for issuing checks with intervals < 5s consistently. This was solved with spawning another scheduler responsible only for checks with intervals 30s or less, yielding a much better throughput for low interval checks.
+There were some problems along the way: We first used Celery as a task broker with Redis, however we did not manage to make it run fast enough, and in the end we did not really need a big framework if all we wanted was to encode some task in JSON and fire and forget it into the queue. So Celery was dropped, significantly improving the throughput. This period, marked by problems, has created bad memories, that one really should avoid if when trying to sell a new monitoring solution that people put their trust into. Second, the scheduler is in Python, too, and with the growing number of checks and entities, our implementation for scheduling combined with some cleanup tasks and background threads for refreshing data, was no longer fast enough for issuing checks with intervals < 5s consistently. This was solved with spawning another scheduler responsible only for checks with intervals 30s or less, yielding a much better throughput for low interval checks.
 
 Currently we are adding more features and working on solving/improving one big remaining issue, that is the single point of failure of Redis. We run frontend nodes in all DCs with multiple LBs, for improved availability, similarly also workers run across the DCs and on multiple nodes, but the queue and state is currently a hot topic. On a prototype basis we wrapped all Redis calls, and now mirror writes to our Cassandra cluster. For writing this seems to work well so far, we have a very limited dataset (scales with hosts, applications, checks) and get replication across nodes and DC for free. The results of this migration will remain open for now, but especially the first frontend implementation is much slower, as one comes from very fast Redis, that supports pipeline commands, significantly reducing latency for fetch lots of alert states with a single call.
 
-But for now ZMON is running stable, and recent additions include a REST api to further increase the teams flexibility to manage alerts or poll their own alert state.
+But for now ZMon is running stable, and recent additions include a REST api to further increase the teams flexibility to manage alerts or poll their own alert state.
 
 Open Source?
 ============
 
-We believe that with our spliting in checks and alerts using Python expressions and support for teams and responsible teams within the alerting ZMON currently provides an interesting and very flexibly solution to build your monitoring. That is why during the ongoing Hack-Week one team is working on getting rid of most of the Zalando dependencies and then releasing ZMON as a runnable Vagrant image to play around with. Stay tuned!
+We believe that with our spliting in checks and alerts using Python expressions and support for teams and responsible teams within the alerting, ZMON currently provides an interesting and very flexibly solution to build your monitoring. That is why during the ongoing Hack-Week one team is working on getting rid of most of the Zalando dependencies and then releasing ZMON as a runnable Vagrant image to play around with. Stay tuned!
 
 .. _our PostgreSQL database monitoring tool: http://tech.zalando.com/posts/monitoring-postgresql-with-pgobserver.html

@@ -9,7 +9,7 @@ Some time ago we already presented `our PostgreSQL database monitoring tool`_, b
 
 .. TEASER_END
 
-Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMon. However, that setup did not scale with the growing number of services and more important with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
+Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMON. However, that setup did not scale with the growing number of services and more important with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
 
 
 Introducing ZMON
@@ -34,7 +34,7 @@ There were some problems along the way: We first used Celery as a task broker wi
 
 Currently we are adding more features and working on solving/improving one big remaining issue, that is the single point of failure of Redis. We run frontend nodes in all DCs with multiple LBs, for improved availability, similarly also workers run across the DCs and on multiple nodes, but the queue and state is currently a hot topic. On a prototype basis we wrapped all Redis calls, and now mirror writes to our Cassandra cluster. For writing this seems to work well so far, we have a very limited dataset (scales with hosts, applications, checks) and get replication across nodes and DC for free. The results of this migration will remain open for now, but especially the first frontend implementation is much slower, as one comes from very fast Redis, that supports pipeline commands, significantly reducing latency for fetch lots of alert states with a single call.
 
-But for now ZMon is running stable, and recent additions include a REST api to further increase the teams flexibility to manage alerts or poll their own alert state.
+But for now ZMON is running stable, and recent additions include a REST api to further increase the teams flexibility to manage alerts or poll their own alert state.
 
 Open Source?
 ============

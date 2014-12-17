@@ -4,7 +4,7 @@
 .. tags: hack-week, event, virtual reality
 .. link:
 .. description: a video interview of the Zalando Hack Week project that creates Virtual Reality kit out of cardboard boxes
-.. author: Nicolaas Mulder
+.. author: Nick Mulder
 .. type: text
 .. image: hackweek3-cardboard-virtual-reality-kits.png
 

@@ -1,4 +1,4 @@
-.. title: Hack Week 3 Highlights: 3D Item View with cardboard like Virtual Reality Kit
+.. title: Hack Week: 3D Item View with cardboard like Virtual Reality Kit
 .. slug: hackweek-december-2014-cardboard-virtual-reality-kit
 .. date: 2014/12/17 08:00:00
 .. tags: hack-week, event, virtual reality
@@ -8,7 +8,7 @@
 .. type: text
 .. image: hackweek3-cardboard-virtual-reality-kit.png
 
-A video introduction into the Hack Week project that repurposes cardboard boxes into something beyond your imagination!
+A video interview with the Hack Week project that repurposes cardboard boxes into something beyond your imagination!
 
 .. TEASER_END
 

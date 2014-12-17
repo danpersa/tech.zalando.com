@@ -12,7 +12,8 @@ Some time ago we already presented `our PostgreSQL database monitoring tool`_, b
 Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMon. However, that setup did not scale with the growing number of services and more important with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
 
 
-**Introducing ZMON**
+Introducing ZMON
+================
 
 How does it look like today: ZMON consists of three major components, a Java “Controller” mostly serving the UI using AngularJS, a Python scheduler and a Python worker. Work distribution from scheduler to worker happens via Redis queues, but more on that later. We do use PostgreSQL for storing alerts and imported check definitions, but most of the monitoring state is currently reflected in Redis. Currently we are also evaluating writing the state into Cassandra. Time series data for all metrics is persisted using KairosDB on top of Cassandra.
 
@@ -26,7 +27,8 @@ The schedulers and any number of workers communicate using Redis lists, the sche
 
  .. image:: /images/zmon/zmon-4.png
 
-**Problems ...**
+Problems..
+==========
 
 There were some problems along the way: We first used Celery as a task broker with Redis, however we did not manage to make it run fast enough, and in the end we did not really need a big framework if all we wanted was encode some task in JSON and fire and forget it into the queue. So Celery was dropped, significantly improving the throughput. Unfortunately this period of problems created a bad memories, that one really should avoid if tries to sell a new monitoring solution where people put their trust in. Second, the scheduler is in Python, too, and with the growing number of checks and entities, our implementation for scheduling combined with some cleanup tasks and background threads for refreshing data, was no longer fast enough for issuing checks with intervals < 5s consistently. This was solved with spawning another scheduler responsible only for checks with intervals 30s or less, yielding a much better throughput for low interval checks.
 
@@ -34,7 +36,8 @@ Currently we are adding more features and working on solving/improving one big r
 
 But for now ZMon is running stable, and recent additions include a REST api to further increase the teams flexibility to manage alerts or poll their own alert state.
 
-** Open Source? **
+Open Source?
+============
 
 We believe that with our spliting in checks and alerts using Python expressions and support for teams and responsible teams within the alerting ZMON currently provides an interesting and very flexibly solution to build your monitoring. That is why during the ongoing Hack-Week one team is working on getting rid of most of the Zalando dependencies and then releasing ZMON as a runnable Vagrant image to play around with. Stay tuned!
 

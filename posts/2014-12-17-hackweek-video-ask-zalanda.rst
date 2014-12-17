@@ -4,7 +4,7 @@
 .. tags: hack-week, event
 .. link:
 .. description: a video interview of the Zalando Hack Week project: Ask Zalanda, which aims to automate some parts of the Customer Care service
-.. author: Nicolaas Mulder
+.. author: Nick Mulder
 .. type: text
 .. image: hackweek3-ask-zalanda.jpg
 

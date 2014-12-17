@@ -8,8 +8,7 @@
 .. type: text
 .. image: hackweek3-ask-zalanda.jpg
 
-A video interview of the Hack Week project that aims to automate some parts of Zalando Customer Care.
-
+Customer satisfaction is key to Zalando. We're always looking at new ways to improve our service. Zalanda is a friendly voice that you can take with you wherever you go. 
 .. TEASER_END
 
 .. youtube:: SvCK13gxrT8

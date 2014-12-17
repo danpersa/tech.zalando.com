@@ -13,4 +13,4 @@ Virtual reality is all the rage right now. And we have tons of spare Zalando car
 .. TEASER_END
 
 .. youtube:: XgmBSiYOh2Q
-   :width: 650
+   :width: 650 

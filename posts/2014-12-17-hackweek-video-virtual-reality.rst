@@ -8,7 +8,7 @@
 .. type: text
 .. image: hackweek3-cardboard-virtual-reality-kit.png
 
-A video interview with the Hack Week project that repurposes cardboard boxes into something beyond your imagination!
+Virtual realiy is all the rage right now. And we have tons of spare Zalando carboard boxes laying around. These creative folks put two and two together and are exploring new ways Zalando can use virtual reality.
 
 .. TEASER_END
 

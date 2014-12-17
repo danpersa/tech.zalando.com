@@ -1,4 +1,4 @@
-.. title: Hack Week 3 Highlights: Ask Zalanda
+.. title: Hack Week: Ask Zalanda
 .. slug: hackweek-december-2014-ask-zalanda-video
 .. date: 2014/12/17 08:00:00
 .. tags: hack-week, event
@@ -8,7 +8,7 @@
 .. type: text
 .. image: hackweek3-ask-zalanda.jpg
 
-A video introduction into the Hack Week project that aims to automate some parts of Zalando Customer Care.
+A video interview of the Hack Week project that aims to automate some parts of Zalando Customer Care.
 
 .. TEASER_END
 

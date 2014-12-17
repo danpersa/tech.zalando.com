@@ -8,7 +8,7 @@
 .. type: text
 .. image: hackweek3-cardboard-virtual-reality-kit.png
 
-Virtual realiy is all the rage right now. And we have tons of spare Zalando carboard boxes laying around. These creative folks put two and two together and are exploring new ways Zalando can use virtual reality.
+Virtual reality is all the rage right now. And we have tons of spare Zalando cardboard boxes laying around. These creative folks put two and two together and are exploring new ways Zalando can use virtual reality.
 
 .. TEASER_END
 

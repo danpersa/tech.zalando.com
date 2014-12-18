@@ -41,6 +41,7 @@ Open Source?
 
 We believe that with our spliting in checks and alerts using Python expressions and support for teams and responsible teams within the alerting, ZMON currently provides an interesting and very flexibly solution to build your monitoring. That is why during the ongoing Hack-Week one team is working on getting rid of most of the Zalando dependencies and then releasing ZMON as a runnable Vagrant image to play around with. Stay tuned!
 
+Discuss on HackerNews: https://news.ycombinator.com/item?id=8762562
+
 .. _our PostgreSQL database monitoring tool: http://tech.zalando.com/posts/monitoring-postgresql-with-pgobserver.html
 
-_Discuss on HackerNews: https://news.ycombinator.com/item?id=8762562

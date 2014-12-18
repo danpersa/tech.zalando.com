@@ -3,17 +3,17 @@
 .. date: 2014/12/18 08:01:00
 .. tags: hack-week, event
 .. link:
-.. description: A video interview with one Zalando Hack Week project that aims to send a shoe into the outer space
+.. description: A trailer for the Zalando Hack Week project that aims to send a shoe into the outer space
 .. author: Nick Mulder
 .. type: text
 .. image: hackweek3-space-launch.jpg
 
-Zalando Hack Week is about pushing boundaries. Taking shoes and and doing the impossible. These folks take "think outside of the box" literally, and are sending a shoe into outer space! 
+Zalando Hack Week is about pushing boundaries. Taking shoes and and doing the impossible. These folks take "thinking outside of the box" literally, and are sending a shoe into outer space! 
 Get the latest updates from the 'offical space shoe website'_
 
 .. TEASER_END
 
-.. youtube:: ...
+.. youtube:: N7_qfeKZ17w
    :width: 650
 
 .. _official space shoe website: http://thespaceshoe.com/

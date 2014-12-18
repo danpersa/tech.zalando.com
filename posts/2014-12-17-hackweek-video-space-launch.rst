@@ -6,7 +6,7 @@
 .. description: A trailer for the Zalando Hack Week project that aims to send a shoe into the outer space
 .. author: Nick Mulder
 .. type: text
-.. image: hackweek3-space-launch.jpg
+.. image: hackweek4-space-launch.jpg
 
 Zalando Hack Week is about pushing boundaries. Taking shoes and and doing the impossible. These folks take "thinking outside of the box" literally, and are sending a shoe into outer space! 
 Get the latest updates from the 'offical space shoe website'_

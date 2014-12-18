@@ -8,11 +8,12 @@
 .. type: text
 .. image: hackweek3-space-launch.jpg
 
-Zalando Hack Week is not just about technical stuffs. These folks take "think outside of the box" literally, and are sending a shoe into the outer space! Get the latest update of this project `here`_
+Zalando Hack Week is about pushing boundaries. Taking shoes and and doing the impossible. These folks take "think outside of the box" literally, and are sending a shoe into outer space! 
+Get the latest updates from the 'offical space shoe website'_
 
 .. TEASER_END
 
 .. youtube:: ...
    :width: 650
 
-.. _here: http://thespaceshoe.com/
+.. _official space shoe website: http://thespaceshoe.com/

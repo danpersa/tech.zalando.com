@@ -12,5 +12,5 @@ Customer satisfaction is key to Zalando. We're always looking at new ways to imp
 
 .. TEASER_END
 
-.. youtube:: SvCK13gxrT8
+.. youtube:: q2yB5sJ-YxQ
    :width: 650

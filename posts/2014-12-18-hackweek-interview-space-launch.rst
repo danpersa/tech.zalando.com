@@ -8,12 +8,12 @@
 .. type: text
 .. image: hackweek3-space-launch.jpg
 
-Sending a shoe into space is no easy task, in just a few days a handful of developers, engineers, product managers created this prototype that they will launch tomorrow! Here we take a behind the look at the team and and equipment the guys are using to send their shoe into space! Up, up and away!!
+Sending a shoe into space is no easy task, in just a few days a handful of developers, engineers, and product managers created this prototype that they will launch tomorrow! Here we take a behind the look at the team and the equipment the guys are using to send their shoe into space! Up, up and away!!
 Get the latest updates from the `official space shoe website`_
 
 .. TEASER_END
 
-.. youtube:: ObHfF_WFlJY
+.. youtube:: VZnHF-AbL5s
    :width: 650
 
 .. _official space shoe website: http://thespaceshoe.com/

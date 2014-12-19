@@ -1,6 +1,6 @@
 .. title: The Earth is not enough - Zalando delivers Fashion to the Space
 .. slug: hackweek-december-2014-zalando-delivers-fashion-to-the-space
-.. date: 2014/12/19 08:00:00
+.. date: 2014/12/19 10:00:00
 .. tags: hack-week, event
 .. link:
 .. description: We bring Fashion to every place in the world! Watch the Zalando Space Shoe Launch.

@@ -1,4 +1,4 @@
-.. title: Hack Week: How the jury decides for the awards
+.. title: Hack Week: How the Jury Decides for the Awards
 .. slug: hackweek-december-2014-how-the-jury-decides-for-the-awards
 .. date: 2014/12/19 12:28:00
 .. tags: hack-week, event

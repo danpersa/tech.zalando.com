@@ -1,7 +1,7 @@
 .. title: Hack Week: Dortmund Bergfest recap
 .. slug: hackweek-december-2014-dortmund-bergfest-recap
 .. date: 2014/12/19 08:00:00
-.. tags: hack-week, event
+.. tags: hack-week, event, team
 .. link:
 .. description: Recap of Dortmund's Bergfest
 .. author: Tim Kröger

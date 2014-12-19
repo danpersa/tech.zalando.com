@@ -28,20 +28,19 @@ class Posts(Directive):
     optional_arguments = 999
 
     def run(self):
-
         all_posts = sorted(self.site.timeline, key=lambda post: post.date, reverse=True)
 
-        for tag in self.arguments:
-            tag_posts = [post for post in all_posts if tag in post.alltags]
-            for post in tag_posts:
-                post.compile('en')
-            ctx = {}
-            ctx["template_name"] = 'posts_list.tmpl'
-            ctx.update(self.site.GLOBAL_CONTEXT)
-            ctx['posts'] = tag_posts
-            ctx['lang'] = 'en'
+        tags = frozenset(self.arguments)
+        tag_posts = [post for post in all_posts if tags & set(post.alltags)]
+        for post in tag_posts:
+            post.compile('en')
+        ctx = {}
+        ctx["template_name"] = 'posts_list.tmpl'
+        ctx.update(self.site.GLOBAL_CONTEXT)
+        ctx['posts'] = tag_posts
+        ctx['lang'] = 'en'
 
-            data = self.site.template_system.render_template('posts_list.tmpl', None, ctx)
-            contents = data
+        data = self.site.template_system.render_template('posts_list.tmpl', None, ctx)
+        contents = data
 
         return [nodes.raw('', contents, format='html')]

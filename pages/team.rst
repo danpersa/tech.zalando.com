@@ -6,4 +6,4 @@
 .. description:
 .. type: text
 
-.. posts:: platform
+.. posts:: platform team

@@ -14,7 +14,7 @@ Hack Week at Zalando Technology in the Dortmund office is serious innovation bus
 
 .. image:: /images/hackweek3/omg-coding.jpg
 
-A little bit of a workout never hurts and also helps working off those kilos resulting from the self-organized breakfasts (sic). The weather was not the best for outdoor activities so what to do in a crowded office? Easy: Indoor Hockey for great justice! The only problem was that of the six sticks that were ordered with great foresightedness only two had arrived so two additional sticks were crafted out of stuff that was lying around. The design is quite special and allowed for insane trickery and half an hour later the teams were ready to engage in fierce battle for fame and honor.
+A little bit of a workout never hurts and also helps working off those kilos resulting from the self-organized breakfeasts (sic). The weather was not the best for outdoor activities so what to do in a crowded office? Easy: Indoor Hockey for great justice! The only problem was that of the six sticks that were ordered with great foresightedness only two had arrived so two additional sticks were crafted out of stuff that was lying around. The design is quite special and allowed for insane trickery and half an hour later the teams were ready to engage in fierce battle for fame and honor.
 
 .. image:: /images/hackweek3/indoor-hockey.jpg
 

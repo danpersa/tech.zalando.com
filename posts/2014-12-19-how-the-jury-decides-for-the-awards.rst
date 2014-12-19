@@ -69,4 +69,7 @@ By the end of the week I will create a shortlist with my 5 favourites for my awa
 My shortlist and the decision
 =============================
 
-In between I have seen all the projects. My shortlist is created. Of course the list is still confidential, because I will not influence the decision of the other judges or the final presentations. But some things I can tell. Since the award 31337 is an engineering award, of course some projects are by definition not on the shortlist. Also, my jury colleague Andreas and I set some tough criteria based upon which we make the final decision. As a little tip: The number one criterion is that neither Andreas nor I understand the project. Only then it can be the most geeky and most difficult engineering project of the Hack Week #3!
+In between I have seen all the projects. My shortlist is created. Of course the list is still confidential, because I will not influence the decision of the other judges or the final presentations. But some things I can tell. Since the award 31337 is an engineering award, of course some projects are by definition not on the shortlist. Also, my jury colleague Andreas and I set some tough criteria based upon which we make the final decision. As a little tip: The number one criterion is that neither Andreas nor I understand the project. Only then it can be the most geeky and most difficult engineering project of the `Hack Week #3`_!
+
+.. _Hack Week #3: http://tech.zalando.com/posts/hackweek-december-2014-a-short-introduction.html
+

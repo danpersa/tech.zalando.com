@@ -7,7 +7,7 @@
 .. author_title: Head of Platform
 .. type: text
 
-Hi, I joined Zalando in June 2014 and have a passion for cloud infrastructures and software development for web related products in genereal.
+Hi, I joined Zalando in June 2014 and have a passion for cloud infrastructures and software development for web related products in general.
 
 Here at Zalando I'm together with my teams responsible for the Zalando Platform including datacenters, network, databases, continuous delivery, deployment tooling, monitoring products, security, identity and access management solutions and much more.
 

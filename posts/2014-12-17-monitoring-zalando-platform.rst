@@ -9,7 +9,7 @@ Some time ago we already presented `our PostgreSQL database monitoring tool`_, b
 
 .. TEASER_END
 
-Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMon. However, that setup did not scale with the growing number of services and more importantly with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The nwe ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
+Earlier the platform was checked using Icinga/Nagios and a custom frontend, the now old ZMon. However, that setup did not scale with the growing number of services and more importantly with the number of people and teams that had their own requirements and wishes for implementing their checks. Thus two key requirements were taken into account: The new ZMON should scale better in terms of performance and its ability to monitor more entities and equally important: it should enable teams to manage checks and alerts on their own.
 
 
 Introducing ZMON

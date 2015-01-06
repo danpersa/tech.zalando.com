@@ -665,7 +665,7 @@ main {
     max-width: 150px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   .author img {
     max-width: 200px;
   }
@@ -725,9 +725,9 @@ header .zalando:before {
   display: block;
   padding-right: 5px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   header .zalando {
-    margin-left: 20px;
+    margin: 8px 0 0 10px;
   }
 }
 .banner {
@@ -859,20 +859,20 @@ header .zalando:before {
   }
 }
 nav {
+  height: 0;
+  width: 100%;
   overflow: hidden;
   -ms-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 0;
   max-height: 0;
   min-height: 0;
-  width: 100%;
   z-index: 2;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   nav {
-    height: auto;
+    height: 44px;
     width: auto;
     float: right;
     max-height: none;
@@ -888,7 +888,7 @@ nav ul {
   padding-left: 10px;
   text-align: right;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 839px) {
   nav ul {
     border: 1px solid #fe6a00;
     border-width: 0 0 3px 0;
@@ -903,12 +903,13 @@ nav ul {
     *display: inline;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 799px) {
+@media screen and (min-width: 600px) and (max-width: 839px) {
   nav ul {
     padding-top: 10px;
   }
 }
 nav li {
+  overflow: hidden;
   text-align: right;
 }
 @media screen and (min-width: 600px) {
@@ -919,7 +920,7 @@ nav li {
     position: relative;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   nav li:nth-of-type(n+2) {
     margin-left: 10px;
   }
@@ -954,23 +955,56 @@ nav li {
 nav a {
   font-size: 14px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 44px;
   display: inline-block;
   *zoom: 1;
   *display: inline;
-  padding: 10px;
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 839px) {
   nav a {
-    color: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (min-width: 840px) {
+  nav a {
+    float: left;
+    color: #ffffff;
+    padding: 0 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+nav .twitter:before {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: 'iconSet';
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  line-height: 44px;
+  white-space: nowrap;
+  padding-right: 10px;
+  float: left;
+  content: '\e600';
+}
+@media screen and (max-width: 839px) {
   .trigger {
     border: 1px solid #ffffff;
     border-width: 5px 0 0 0;
@@ -997,14 +1031,14 @@ header input[type="checkbox"] {
   top: -100px;
   left: -100px;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 839px) {
   header input[type="checkbox"]:checked + nav {
     height: 100%;
     max-height: 300px;
     min-height: 50px;
   }
 }
-@media screen and (max-width: 799px) and screen and (min-width: 600px) {
+@media screen and (max-width: 839px) and screen and (min-width: 600px) {
   header input[type="checkbox"]:checked + nav {
     max-height: 80px;
   }
@@ -1786,7 +1820,7 @@ footer {
   background-color: #f7f7f7;
   min-height: 130px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   footer {
     padding-top: 20px;
   }
@@ -1799,12 +1833,12 @@ footer .content li {
   *zoom: 1;
   *display: inline;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 839px) {
   footer .content li {
     width: 33%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   footer .content li {
     position: relative;
   }
@@ -1829,7 +1863,7 @@ footer .content a {
   padding: 10px 5px;
   text-decoration: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   footer .content a {
     padding-left: 10px;
     padding-right: 9px;

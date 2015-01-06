@@ -11,6 +11,21 @@
     //    -: ~`(function () { return ';font-size: @{size}rem'; }())`;
     }
 
+    .icon(@line-height: 1) {
+        font-family: 'iconSet';
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        font-variant: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: none;
+        speak: none;
+        line-height: @line-height;
+        white-space: nowrap;
+    }
 
     // POSITIONING ()---------------------------------------------------------------------------------------------------
     .position(topLeft, @y: 0, @x: @y, @position: absolute) {

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+[ -r /etc/lsb-release ] && . /etc/lsb-release
+
+BBlue='\e[1;34m'  # Blue
+Color_Off='\e[0m' # Text Reset
+
+printf "Zalando Tech Blog running on %s (%s)\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
+echo -e "Check ${BBlue}http://tech.zalando.com/${Color_Off} for more information."
+echo 'Use "cd /vagrant && make" to build static HTML'
+

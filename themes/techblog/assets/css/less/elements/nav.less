@@ -1,17 +1,16 @@
 
     // NAVIGATION ()----------------------------------------------------------------------------------------------------
     nav {
+        .dimension(0, 100%);
         .overHidden;
         .transition(all, .3s);
-        height: 0;
         max-height: 0;
         min-height: 0;
-        width: 100%;
         z-index: 2;
 
         @media screen and (min-width: @screenTabletLandscape) {
 
-            .dimension(auto);
+            .dimension(@heightHeaderNavBar, auto);
             .right;
             max-height: none;
 
@@ -45,6 +44,7 @@
         }
 
         li {
+            .overHidden;
             .textRight;
 
             @media screen and (min-width: @screenTabletPortrait) {
@@ -86,19 +86,43 @@
         }
 
         a {
-            .font(@fontSizeH3, normal, @distanceDouble);
+            .font(@fontSizeHeaderNav, normal, @lineHeightHeaderNav);
             .inlineBlock;
-            .padding;
             .pointer;
             .relative;
             .uppercase;
             text-decoration: none;
             white-space: nowrap;
 
+            @media screen and (max-width: (@screenTabletLandscape - 1px)) {
+
+                .paddingHorizontal;
+
+            }
+
             @media screen and (min-width: @screenTabletLandscape) {
 
+                .left;
                 color: @white;
+                padding: 0 5px;
 
+            }
+
+            @media screen and (min-width: @screenDesktop) {
+
+                .paddingHorizontal;
+
+            }
+        }
+
+        .twitter {
+
+            &:before {
+                .font(@fontSizeHeaderIcons, normal);
+                .icon(@lineHeightHeaderNav);
+                .paddingRight;
+                .left;
+                content: '\e600';
             }
         }
     }

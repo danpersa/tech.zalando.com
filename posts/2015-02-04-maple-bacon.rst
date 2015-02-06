@@ -114,7 +114,7 @@ Wrap up
 
 So there you have it: a modern library to cover all you iOS image related needs. It is available on `CocoaPods`_ and `github`_ with detailed installation instructions and a sample app to get you started. We hope you like it.
 
-.. _ours: <https://www.zalando.de/zalando-apps/>
+.. _ours: https://www.zalando.de/zalando-apps/
 .. _Swift: https://developer.apple.com/swift/
 .. _failable initializers: https://developer.apple.com/swift/blog/?id=17
 .. _Core Graphics: https://developer.apple.com/library/ios/documentation/CoreGraphics/Reference/CoreGraphics_Framework/_index.html

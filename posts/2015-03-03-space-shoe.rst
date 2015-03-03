@@ -1,4 +1,4 @@
-.. title: We Launched It!: The Zalando Space Shoe (Video)
+.. title: We Launched It! The Zalando Space Shoe (Video)
 .. slug: we-launched-it-the-zalando-space-shoe-video
 .. date: 2015/03/03 08:00:00
 .. tags: space, shoe, video, hack-week

@@ -1,7 +1,7 @@
-.. title: The Zalando Space Shoe: We Launched It!
-.. slug: space-shoe
+.. title: We Launched It!: The Zalando Space Shoe (Video)
+.. slug: we-launched-it-the-zalando-space-shoe-video
 .. date: 2015/03/03 08:00:00
-.. tags: space, shoe, hack-week
+.. tags: space, shoe, video, hack-week
 .. link:
 .. description: Zalando launched a lone Zign shoe to space on the 21st of February, 2015.
 .. author: Rodrigo Reis

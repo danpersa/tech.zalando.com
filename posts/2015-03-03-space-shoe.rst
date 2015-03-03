@@ -21,14 +21,16 @@ So, on what was a beautiful Saturday in Poland, we accomplished our mission. The
 
 **08:00** - Team meets at our departure point: Zalando’s tech office in Mollstraße 1, Berlin. Six members of our 14-member team showed up--not bad at all for 8 AM on a Saturday. A lot of sleepy eyes in our group, but we had high hopes nevertheless. We gathered all the equipment and loaded everything into our cars.
 
+.. image:: /images/space-launch/ship_duke.jpg
+
+
 **08:30** - Start of our journey to the launch site at Kostrzyn, Poland, about 100km from Berlin. We chose Kostrzyn because we knew that it has a wide, open field perfect for activities such as launching golden women’s shoes into space. :)
 
 **10:05** - Arrival in Kostrzyn. After unloading our equipment, we inflate the balloon with helium and set up (and turn on!) the `GoPro`_ camera, smartphone camera and GPS tracker. We seal everything inside except for the shoe, which we attach to an outer metal structure and tie to the balloon.
 
-
-.. image:: /images/space-launch/ship_duke.jpg
 .. image:: /images/space-launch/balloon.jpg
 .. image:: /images/space-launch/ship_all.jpg
+
 
 **11:05** - Prepare for launch. 3… 2… 1… and… LIFTOFF! And this time, the ship really blasts into space! We hear the first burst of excitement from the Space Shoe team!
 

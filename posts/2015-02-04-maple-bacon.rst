@@ -55,7 +55,7 @@ The most straight forward use-case is downloading images (with automatic caching
   }
 
 
-Compared to Objective-C you'll notice straight away, that you use the if-let construct to unwrap the NSURL. This is due to Swift's `failable initializers`_ (force unwrapping optionals in Swift is a bit of a code smell). But compare this to Objective-C where you'd have to perform some sanity checks on the NSTimeIntervalURL or other languages like Java that is statically typed but still forces you to perform null checks everywhere. Having Optionals at the core of the language is one of Swift's best features.
+Compared to Objective-C you'll notice straight away, that you use the if-let construct to unwrap the NSURL. This is due to Swift's `failable initializers`_ (force unwrapping optionals in Swift is a bit of a code smell). But compare this to Objective-C where you'd have to perform some sanity checks on the NSURL or other languages like Java that is statically typed but still forces you to perform null checks everywhere. Having Optionals at the core of the language is one of Swift's best features.
 
 ImageManager
 ------------

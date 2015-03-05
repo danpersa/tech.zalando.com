@@ -1,6 +1,7 @@
-FROM hjacobs/nikola
+FROM zalando/nikola
 
-RUN pip3 install CherryPy==3.6.0
+RUN apt-get install -y git
+RUN pip3 install CherryPy
 
 ADD run.sh /
 ADD serve.py /

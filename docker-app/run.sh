@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo 'Sleeping 10s..'
-sleep 10
-
 echo 'Starting CherryPy HTTP server..'
 /serve.py tech.zalando.com/output/ &
 

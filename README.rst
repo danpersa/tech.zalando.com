@@ -29,7 +29,7 @@ You need Git and Docker_ to build static HTML (should also work now with latest 
 
     $ git clone https://github.com/zalando/tech.zalando.com.git
     $ cd tech.zalando.com
-    $ docker run -v $(pwd):/workdir -t hjacobs/nikola build
+    $ docker run -v $(pwd):/workdir -t zalando/nikola build
 
 Now open the generated HTML files in the "output" directory.
 

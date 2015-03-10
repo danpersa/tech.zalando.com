@@ -1,13 +1,11 @@
 #!/bin/bash
 
-echo 'Starting CherryPy HTTP server..'
-/serve.py tech.zalando.com/output/ &
-
 while true; do
+    cd /workdir
     echo 'Cloning git repo..'
     git clone https://github.com/zalando/tech.zalando.com.git
     (
-    cd tech.zalando.com
+    cd /workdir/tech.zalando.com
     echo 'Pulling git repo..'
     git pull
     rm -fr .doit*

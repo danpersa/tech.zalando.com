@@ -1,13 +1,13 @@
 FROM zalando/nikola
 
-RUN apt-get install -y git
-RUN pip3 install CherryPy
+RUN apt-get install -y git supervisor nginx
 
-ADD run.sh /
-ADD serve.py /
+COPY supervisord.conf /etc/supervisord.conf
+COPY update.sh /
+COPY default-nginx-site.conf /etc/nginx/sites-available/default
 
 EXPOSE 8000
 
-ENTRYPOINT ["/run.sh"]
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
 
 

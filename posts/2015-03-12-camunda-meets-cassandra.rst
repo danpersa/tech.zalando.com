@@ -14,7 +14,7 @@ This is a guest post by Daniel Meyer, Technical Lead at `Camunda`_. You can foll
 
 .. TEASER_END
 
-Jörn Horstman, André Hartmann and Lukas Niemeier from Zalando’s engineering team visited Camunda earlier this week to present their prototype for running the Camunda engine on Apache Cassandra. If you’re in a hurry, go here to review their slides, and visit the Zalando GitHub page to review their source code.
+Jörn Horstman, André Hartmann and Lukas Niemeier from Zalando’s engineering team visited Camunda earlier this week to present their prototype for running the Camunda engine on Apache Cassandra. If you’re in a hurry, `go here to review their slides <https://docs.google.com/a/zalando.de/presentation/d/1fvo9doqffDoR96yeat_wZNusQFacXi0GgF0kV4_mAbQ/edit#slide=id.p>`_, and `visit the Zalando GitHub page <https://github.com/zalando/camunda-meets-cassandra>`_ to review their source code.
 
 Zalando is Europe’s leading online fashion platform, with more than 7,000 employees and revenue of €2.2 billion in 2014. They are also Camunda enterprise edition subscribers and use the Camunda process engine for processing orders. Whenever you buy something at Zalando’s online shop, you’re also kicking off a process instance in the Camunda process engine.
 
@@ -23,7 +23,7 @@ Zalando's Current Architecture
 
 Zalando's system needs to scale horizontally. Zalando's order processing currently runs on PostgreSQL. The tech team partitions their order and process engine data over eight shards, each of which is an independent instance of PostgreSQL. Such an "instance" is a small cluster with replication for performance and failover.
 
-At the application server level, Zalando runs on Apache Tomcat and uses the Spring Framework. For each shard (database), an instance of the Camunda process engine is created. The application is replicated over 16 nodes. When a new order comes in, the application decides in which shard the order data and the corresponding process instance data will be stored. The mapping (orderId -> shard) is stored in a global mapping table. Then the corresponding process instance is started in that shard.
+At the application server level, Zalando runs on `Apache Tomcat`_ and uses the `Spring Framework`_. For each shard (database), an instance of the Camunda process engine is created. The application is replicated over 16 nodes. When a new order comes in, the application decides in which shard the order data and the corresponding process instance data will be stored. The mapping (orderId -> shard) is stored in a global mapping table. Then the corresponding process instance is started in that shard.
 
 .. image:: /images/camunda-cassandra-current-architecture.png
 
@@ -34,7 +34,7 @@ The Zalando team says that this works quite well but presents a few drawbacks:
 * Engineers need to implement the sharding themselves, including the mapping table. It would be nicer if the sharding of the data was transparent to the application,
 * You must do queries in monitoring applications against all of the shards and aggregate the data manually
 
-During Zalando’s "Hack Week," Jörn, André and Lukas experimented with Apache Cassandra to explore alternatives to how their current architecture works.
+During Zalando’s "`Hack Week`_", Jörn, André and Lukas experimented with Apache Cassandra to explore alternatives to how their current architecture works.
 
 The Cassandra Prototype
 =======================
@@ -42,7 +42,7 @@ Over the course of a week, the three engineers built a prototype that exchanges 
 Learn more about Cassandra
 Gain a better understanding of the Camunda DB structure
 
-The Zalando prototype provides an alternative implementation of Camunda's PersistenceSession interface. It replicates Camunda's relational model in Cassandra--creating a table for executions in which each execution became a row, as well as tables for variables, tasks, etc. The Zalando team set things up this way on purpose because they wanted to start with a naive implementation and then learn from that.
+The Zalando prototype provides an `alternative implementation <https://github.com/zalando/camunda-meets-cassandra/blob/master/src/main/java/de/zalando/hackweek/bpm/engine/impl/db/CassandraPersistenceSession.java>`_ of Camunda's `PersistenceSession <https://github.com/camunda/camunda-bpm-platform/blob/master/engine/src/main/java/org/camunda/bpm/engine/impl/db/PersistenceSession.java>`_ interface. It replicates Camunda's relational model in Cassandra--creating a table for executions in which each execution became a row, as well as tables for variables, tasks, etc. The Zalando team set things up this way on purpose because they wanted to start with a naive implementation and then learn from that.
 
 During the development phase, they multiplexed the persistence session and executed all statements on both a SQL database and Cassandra. This enabled them to enhance support progressively while always having a working system. The result: Successful execution of simple processes.
 
@@ -73,6 +73,9 @@ The implications of this solution would be:
 * No intra-process instance concurrency (concurrency inside a single process instance) involving different process engine instances (a single process engine can still lock the row, do things in multiple threads, join the operations and do one atomic update, releasing the lock).
 * The approach would not tolerate machine failure.
 
-Discussing all of this was a lot of fun! We hope you join us at our future meetups.
+Discussing all of this was a lot of fun! `We hope you join us at our future meetups. <https://network.camunda.org/meetings/>`_
 
 .. _Camunda: http://camunda.org/
+.. _Apache Tomcat: http://tomcat.apache.org/
+.. _Spring Framework: http://projects.spring.io/spring-framework/
+.. _Hack Week: http://tech.zalando.com/posts/hackweek-december-2014-a-short-introduction.html

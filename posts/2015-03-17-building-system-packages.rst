@@ -12,7 +12,7 @@ Packaging and deploying software has always been a somewhat important topic for 
 
 .. TEASER_END
 
-**TL;DR**: We will see that system packages can be build fairly easy with tools like `fpm`_ - if your goal is not to build policy-compliant packages but just get your software deployable. With the scriptable virtual boxes provided by `Vagrant`_ this process can be automated further, so you could build, update and publish your packages just with a commit into the SCM.
+**TL;DR**: We will see that system packages can be built fairly easy with tools like `fpm`_ - if your goal is not to build policy-compliant packages but just get your software deployable. With the scriptable virtual boxes provided by `Vagrant`_ this process can be automated further, so you could build, update and publish your packages just with a commit into the SCM.
 Whether we create packages to manage our own software, build or modify packages for 3rd party software or just backport a version of a package for an older distribution, we can do that with a couple of `simple scripts`_.
 
 Motivation

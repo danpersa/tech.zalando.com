@@ -112,10 +112,8 @@ The ``recipe.rb`` example below then can build the package from the fetched tar.
 
 We wrote some simple shell scripts to automate this process, they can be found in our `GitHub repository`_. Here is how it works:
 
-- ``boxes``: a list of supported build boxes with URLs to download the Virtualbox images.
-- ``setup.sh``: installs all needed packages, iterates over ``boxes`` and downloads the Vagrant boxes.
 - ``Vagrantfile``: init file for Vagrant, It starts all boxes listed in ``boxes`` and provisions them with ``provision*sh``
-- ``provision*sh``: Simple shell scripts used to install the needed build tools on the Vagrant boxes. You may specify provision scripts per Vagrant box, creating one named like ``provision-$hostname.sh``, otherwise default script is used. All of them call ``cook-recipe.sh``.
+- ``provision/provision*sh``: Simple shell scripts used to install the needed build tools on the Vagrant boxes. You may specify provision scripts per Vagrant box, creating one named like ``provision-$hostname.sh``, otherwise default script is used. All of them call ``cook-recipe.sh``.
 - ``recipes.list``: Lists the names of subdirs under ``recipes/`` to jump into and build packages.
 - ``cook-recipe.sh``: iterates over ``recipes.list`` and execute ``prepare.sh`` and ``fpm-cookery``, if appropriate files are existing.
 - ``prepare.sh``: "pre-build" tasks, which are needed before the ``fpm-cookery`` can build the packages.

@@ -6,7 +6,7 @@
 .. description: A comparison of different spriting methods
 .. author: Andrey Kuzmin
 .. type: text
-.. image: creating-bulletproof-svg-icons-superman.png
+.. image: creating-bulletproof-svg-icons-superman.jpg
 
 
 =============================================
@@ -104,13 +104,20 @@ CSS code for the icon:
   }
   .icon > svg {
       display: block;
-      fill: currentColor;  // allow color property to control fill color
-      pointer-events: none;  // prevent svg from being a target of the delegated event
-                             // http://css-tricks.com/links-inline-svg-staying-target-events/
+      /* Allow color property to control fill color */
+      fill: currentColor;
+      /* Prevent SVG from being a target of the delegated event */
+      pointer-events: none;
   }
   .no-js .icon > svg {
-      display: none;  // fallback CSS is served in <noscript> tag so we have to hide SVG
+      /* Fallback CSS is served in <noscript> tag,
+         so we have to hide SVG */
+      display: none;
   }
+
+.. image:: /images/creating-bulletproof-svg-icons-parachute.jpg
+   :width: 40%
+   :alt: PNG Fallback
 
 Conclusion
 ==========

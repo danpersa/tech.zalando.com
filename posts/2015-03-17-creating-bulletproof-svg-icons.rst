@@ -1,6 +1,6 @@
 .. title: Creating Bulletproof SVG Icons
 .. slug: creating-bulletproof-svg-icons
-.. date: 2015/03/17 08:00:00
+.. date: 2015/03/18 08:00:00
 .. tags: frontend
 .. link:
 .. description: A comparison of different spriting methods

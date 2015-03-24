@@ -6,4 +6,4 @@
 .. description:
 .. type: text
 
-Hi there! I joined Zalando in May 2013 as product manager in the backend purchasing team. At Zalando, I enjoy the professional working atmosphere. 
+Hi there! I joined Zalando in May 2013. My main area of work is continuous integration and delivery. At Zalando, I enjoy the professional working atmosphere. 

@@ -3,6 +3,8 @@
 .. date: 2014-03-25 10:15:12
 .. tags:
 .. author: Calvin Seward
+.. second_author: Roland Vollgraf
+.. third_author: Urs Bergmann
 .. image: warehouse.png
 
 Let’s say you know what items need to be retrieved from a warehouse and you know where the items are located. But can you retrieve all those items following an

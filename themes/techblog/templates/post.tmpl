@@ -52,6 +52,26 @@
                 </p>
 
             {% endif %}
+            
+            {% if post.meta('third_author') %}
+
+                <p class="signature">
+                
+                    {{ helper.html_author(post.meta('third_author')) }}
+                    
+                </p>
+
+            {% endif %}
+            
+            {% if post.meta('second_author') %}
+
+                <p class="signature">
+                
+                    {{ helper.html_author(post.meta('second_author')) }}
+                    
+                </p>
+
+            {% endif %}
 
 
         </div>

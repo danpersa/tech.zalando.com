@@ -1,5 +1,18 @@
 {#  -*- coding: utf-8 -*- #}
 
+{% macro html_author(author) %}
+    <a href="/authors/{{ slugify(author|e) }}.html" rel="author">
+        <img src="/images/authors/{{ slugify(author|e) }}.jpg" />
+        {{ author|e }}</a>
+
+    {% if not index_teasers %}
+
+        <br>
+        {{ get_author_title(author|e) }}
+
+    {% endif %}
+{% endmacro %}
+
 {% macro html_title() %}
 
     <h1 itemprop="name">
@@ -13,7 +26,20 @@
             {% endif %}
 
             by
-            <a href="/authors/{{ slugify(post.meta('author'))|e }}.html" rel="author">{{ post.meta('author')|e }}</a>
+            <a href="/authors/{{ slugify(post.meta('author'))|e }}.html" rel="author">{{ post.meta('author')|e }}</a>{% if post.meta('third_author') %},{% endif %}
+            
+            {% if post.meta('third_author') %}
+                        
+                <a href="/authors/{{ slugify(post.meta('third_author'))|e }}.html" rel="author">{{ post.meta('third_author')|e }}</a>
+                    
+            {% endif %}
+                    
+            {% if post.meta('second_author') %}
+              
+                and
+                <a href="/authors/{{ slugify(post.meta('second_author'))|e }}.html" rel="author">{{ post.meta('second_author')|e }}</a>
+                    
+            {% endif %}
 
             <time itemprop="datePublished" datetime="{{ post.date.isoformat() }}">
                 - {{ post.formatted_date('%B %Y')|e }}

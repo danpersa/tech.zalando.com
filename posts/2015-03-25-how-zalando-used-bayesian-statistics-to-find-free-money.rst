@@ -65,6 +65,8 @@ This strategy presents a few problems:
 
 * Because there are far more parcels than items, and a lot of little unknowns and measurement errors along the way, the matrix :math:`A` doesn't have a true inverse
 
+* There are some articles where we don't have enough information to accuracy estimate an article's weight.  Therefore our goal is to calculate not just point estimates but also *confidence intervals* so that we know how sure we can be about our estimate of an article's weight.
+
 Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
 
 Results
@@ -140,7 +142,7 @@ Instead of using the article weights obtained by the manual process, we used the
 Confidence Intervals
 --------------------
 
-If you remember back to the beginning, we didn't just want to produce estimates of article weights, but also wanted to generate so-called confidence intervals. A confidence interval is when we can say that an article weighs between 150 and 170 grams with a 90% probability. Our automated weight estimator delivers results that nicely fit the data.
+If you remember back, we didn't just want to produce estimates of article weights, but also wanted to generate so-called confidence intervals. A confidence interval is when we can say that an article weighs between 150 and 170 grams with a 90% probability. Our automated weight estimator delivers results that nicely fit the data.
 
 In Figure 5, each blue dot represents an estimated article weight. The position of particular dots on the y-axis is the relative error defined as
 

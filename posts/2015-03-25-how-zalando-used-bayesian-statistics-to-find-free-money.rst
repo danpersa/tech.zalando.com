@@ -1,9 +1,9 @@
 .. title: How Zalando Used Bayesian Statistics to Find Free Money
 .. slug: how-zalando-used-bayesian-statistics-to-find-free-money
 .. date: 2015/03/25 11:00:00
-.. tags: warehouse logistics, machine learning, baysian statistics, baysian modelling, gibbs sampling, statistics, graphical models, optimization, mathjax
+.. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
-.. description: We decribe how we automatically estimate article weights from parcel weights and save a lot of money in the process.
+.. description: We describe how we automatically estimate article weights from parcel weights and save a lot of money in the process.
 .. author: Calvin Seward
 .. second_author: Roland Vollgraf
 .. third_author: Urs Bergmann
@@ -38,7 +38,7 @@ The key here is that we already have *data for free* on the volume and weight of
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 1: </b> 
     Weights and volumes of parcels sent from the Zalando warehouse, as measured by the volume scanner.
-    The parcels with a low weight and highly varied volume are envelopes, and the voume of the envelope
+    The parcels with a low weight and highly varied volume are envelopes, and the volume of the envelope
     varies with the volume of the contents.
    </caption>
   </table>
@@ -89,7 +89,7 @@ Many Zalando items have already been weighed manually, so a natural evaluation s
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 2: </b> 
-    Estimated article weights vs. the weight obtained by weighing acutal article
+    Estimated article weights vs. the weight obtained by weighing actual article
    </caption>
   </table>
   
@@ -117,7 +117,7 @@ Figure 3 shows the results of our manual process, in which we subtracted the mea
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 3: </b> 
      The volumes and weights of parcels after we subtracted the weight of the items in the parcel, 
-     where the item weights were otained via a manual weighing process.
+     where the item weights were obtained via a manual weighing process.
    </caption>
   </table>
  

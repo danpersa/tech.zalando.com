@@ -70,7 +70,7 @@ Zalando uses :math:`K` distinct package types to send out parcels. Some of these
 
 We also integrate our beliefs about the volumes and weights of these different parcel types. We refer to the believed weight of the :math:`k`-th package type as :math:`\mu_{Z,k}` and the believed volume as :math:`\mu_{V,k}`. Further, we make use of our belief on how far the measured volume and weight of a parcel can deviate from the believed volume and weight by adding variance terms to this system with :math:`\sigma^2_{Z,k}` and :math:`\sigma^2_{V,k}`.  
 
-If we know that a parcel item weighs :math:`X_{1j},\dots,X_{L_jj}`, and the parcel type is :math:`k_j`, then the parcel weight is a Gaussian random variable centered around the sum of the item weights and the assumed package weight :math:`\mu_{Z,k_j}`, with a variance determined by :math:`\sigma^2_{Z,k_j}`.
+If we know that the parcel items weigh :math:`X_{1j},\dots,X_{L_jj}`, and the parcel type is :math:`k_j`, then the parcel weight is a Gaussian random variable centered around the sum of the item weights and the assumed package weight :math:`\mu_{Z,k_j}`, with a variance determined by :math:`\sigma^2_{Z,k_j}`.
 
   .. math:: Z_j \mid X_{1j},\dots,X_{L_jj},k_j\sim\mathcal N\bigg(\sum_{l=1}^{L_j}X_{lj} + \mu_{Z,k_j},\sigma^2_{Z,k_j}\bigg)
 

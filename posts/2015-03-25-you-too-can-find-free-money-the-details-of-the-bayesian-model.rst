@@ -1,9 +1,9 @@
 .. title: You Too Can Find Free Money: The Details of the Bayesian Model
 .. slug: you-too-can-find-free-money-the-details-of-the-bayesian-model
 .. date: 2015/03/25 10:00:00
-.. tags: warehouse logistics, machine learning, baysian statistics, baysian modelling, gibbs sampling, statistics, graphical models, optimization, mathjax
+.. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
-.. description: We decribe how we created a Bayesian model to automatically estimate article weights from parcel weights.
+.. description: We describe how we created a Bayesian model to automatically estimate article weights from parcel weights.
 .. author: Calvin Seward
 .. second_author: Roland Vollgraf
 .. third_author: Urs Bergmann
@@ -51,7 +51,7 @@ Parcel Item Weights
   
 In this step, we model the assumption that the weight of a parcel :math:`Z_j`, given the weights of the items contained in that parcel :math:`X_{1j},\dots,X_{L_jj}`, is equal to the sum of the weights of the individual items in that parcel plus a Gaussian error. We use the term "parcel item" to distinguish individual items in a parcel from an "article," which is--in Zalando speak--a SKU. Note that the Gaussian error :math:`\varepsilon_j` doesn't require a zero mean; in this way, we can model the weight of packing material with the mean. 
 
-The mean of :math:`\varepsilon_j` then models the weight of the shipping box and packing material for a particular parcel, and the variance of :math:`\varepsilon_j` accounts for how much unexplained noise we believe to be in the system: scale measurement errors, unknown changes in packing material, etc. (I’ll model the mean and variance of :math:`\varepsilon_j` in the next section.) Putting this into a formula, we get:
+The mean of :math:`\varepsilon_j` then models the weight of the shipping box and packing material for a particular parcel, and the variance of :math:`\varepsilon_j` accounts for how much unexplained noise we believe to be in the system: scale measurement errors, unknown changes in packing material, etc. (We`ll model the mean and variance of :math:`\varepsilon_j` in the next section.) Putting this into a formula, we get:
 
   .. math:: Z_j \mid X_{1j},\dots,X_{L_jj} = \sum_{l=1}^{L_j} X_{lj} + \varepsilon_j
 
@@ -70,7 +70,7 @@ Zalando uses :math:`K` distinct package types to send out parcels. Some of these
 
 We also integrate our beliefs about the volumes and weights of these different parcel types. We refer to the believed weight of the :math:`k`-th package type as :math:`\mu_{Z,k}` and the believed volume as :math:`\mu_{V,k}`. Further, we make use of our belief on how far the measured volume and weight of a parcel can deviate from the believed volume and weight by adding variance terms to this system with :math:`\sigma^2_{Z,k}` and :math:`\sigma^2_{V,k}`.  
 
-If we know that a parcel item weighs :math:`X_{1j},\dots,X_{L_jj}`, and the parcel type weighs :math:`k_j`, then the parcel weight is a Gaussian random variable centered around the sum of the item weights and the assumed package weight :math:`\mu_{Z,k_j}`, with a variance determined by :math:`\sigma^2_{Z,k_j}`.
+If we know that the parcel items weigh :math:`X_{1j},\dots,X_{L_jj}`, and the parcel type is :math:`k_j`, then the parcel weight is a Gaussian random variable centered around the sum of the item weights and the assumed package weight :math:`\mu_{Z,k_j}`, with a variance determined by :math:`\sigma^2_{Z,k_j}`.
 
   .. math:: Z_j \mid X_{1j},\dots,X_{L_jj},k_j\sim\mathcal N\bigg(\sum_{l=1}^{L_j}X_{lj} + \mu_{Z,k_j},\sigma^2_{Z,k_j}\bigg)
 
@@ -91,7 +91,7 @@ Let’s now switch focus from what we know about parcels to what we know about t
 
   .. math:: X_i\mid \mu_{X,i},\rho_{X,i}\sim\mathcal N\bigg(\mu_{X,i},\frac{\mu_{X,i}^2}{\rho_{X,i}}\bigg)
  
-We use the precision :math:`\rho` instead of the more traditional variance :math:`\sigma` because it allows the variance to scale with the mean :math:`\mu_{X,i}`. Once we know :math:`\mu_{X,i}` and :math:`\rho_{X,i}`, we have answered the question we set out to solve and now have a reasonably accurate estimate about that particular article's weight.
+We use the precision :math:`\rho` instead of the more traditional variance :math:`\sigma` because it allows the variance to scale with the mean :math:`\mu_{X,i}`. Once we know :math:`\mu_{X,i}` and :math:`\rho_{X,i}`, we have answered the question we set out to solve and now have a reasonably accurate estimate about that particular article's weight distribution.
 
 Article Weight Hyper-Priors
 ---------------------------
@@ -111,12 +111,12 @@ To make the solution more tractable, we decided to use the `conjugate priors <ht
 of :math:`\mu_{X,i}` and :math:`\rho_{X,i}`, meaning that for :math:`\mu_{X,i}` we use the `gamma distribution <http://en.wikipedia.org/wiki/Gamma_distribution>`_
 as our prior setting:
 
-  .. math:: \mu_{X,i}\mid\alpha_{\mu,X}\beta_{\mu,X} \sim \text{Gamma}(\alpha_{\mu,X},\beta_{\mu,X})
+  .. math:: \mu_{X,i}\mid\alpha_{\mu,X},\beta_{\mu,X} \sim \text{Gamma}(\alpha_{\mu,X},\beta_{\mu,X})
  
 In the same way, we use the closely related `inverse gamma distribution <http://en.wikipedia.org/wiki/Inverse-gamma_distribution>`_
 as a prior over :math:`\rho_{X,i}`, setting
 
-  .. math:: \rho_{X,i}\mid\alpha_{\rho,X}\beta_{\rho,X} \sim \text{Inv-Gamma}(\alpha_{\rho,X},\beta_{\rho,X})
+  .. math:: \rho_{X,i}\mid\alpha_{\rho,X},\beta_{\rho,X} \sim \text{Inv-Gamma}(\alpha_{\rho,X},\beta_{\rho,X})
  
 Putting It All Together
 -----------------------

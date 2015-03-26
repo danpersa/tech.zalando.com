@@ -1,6 +1,6 @@
 .. title: You Too Can Find Free Money: The Details of the Bayesian Model
 .. slug: you-too-can-find-free-money-the-details-of-the-bayesian-model
-.. date: 2015/03/25 10:00:00
+.. date: 2015/04/01 10:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
 .. description: We describe how we created a Bayesian model to automatically estimate article weights from parcel weights.

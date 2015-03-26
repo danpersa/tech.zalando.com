@@ -178,20 +178,7 @@ Deriving our new measuring model and verifying that it works took some effort! B
 
 And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That isn't just free money--that's priceless.
 
-If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
+Return soon to read a more in depth article about the mathematical details of our Bayesian model in the near future.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.. If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
 

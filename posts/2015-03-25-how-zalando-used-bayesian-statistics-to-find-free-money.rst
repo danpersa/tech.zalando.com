@@ -1,6 +1,6 @@
 .. title: How Zalando Used Bayesian Statistics to Find Free Money
 .. slug: how-zalando-used-bayesian-statistics-to-find-free-money
-.. date: 2015/03/25 11:00:00
+.. date: 2015/03/26 11:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
 .. description: We describe how we automatically estimate article weights from parcel weights and save a lot of money in the process.
@@ -178,7 +178,5 @@ Deriving our new measuring model and verifying that it works took some effort! B
 
 And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That isn't just free money--that's priceless.
 
-Return soon to read a more in depth article about the mathematical details of our Bayesian model in the near future.
-
-.. If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
+If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
 

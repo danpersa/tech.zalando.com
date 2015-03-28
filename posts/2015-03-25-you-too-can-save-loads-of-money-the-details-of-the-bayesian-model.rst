@@ -1,5 +1,5 @@
-.. title: You Too Can Find Free Money: The Details of the Bayesian Model
-.. slug: you-too-can-find-free-money-the-details-of-the-bayesian-model
+.. title: You Too Can Save Loads of Money: The Details of the Bayesian Model
+.. slug: you-too-can-save-loads-of-money-the-details-of-the-bayesian-model
 .. date: 2015/03/26 12:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
@@ -10,7 +10,7 @@
 .. type: text
 .. image: weight-estimation/bayes_icon.png
 
-In our `previous article <../posts/how-zalando-used-bayesian-statistics-to-find-free-money.html>`_, we described how the Zalando Data Intelligence team accurately infers individual item weights from the weights of parcels we send to our customers. But we didn’t share the secret sauce--the juicy details of building a Bayesian statistical model. In this article, we want to fill in these gaps and explain exactly how we constructed the model that got us such great results.
+In our `previous article <../posts/how-zalando-used-bayesian-statistics-to-save-loads-of-money.html>`_, we described how the Zalando Data Intelligence team accurately infers individual item weights from the weights of parcels we send to our customers. But we didn’t share the secret sauce--the juicy details of building a Bayesian statistical model. In this article, we want to fill in these gaps and explain exactly how we constructed the model that got us such great results.
 
 .. TEASER_END
 
@@ -152,7 +152,7 @@ Deriving our new measuring model took some effort! But it was all worth it, beca
  
  * A reliable way to know the accuracy of our estimations
 
-After working through this article, you deserve to give yourself a break.  So go ahead, take a look at (and like) `our old post <../posts/how-zalando-used-bayesian-statistics-to-find-free-money.html>`_ with all the fluffy text and pretty pictures. You’ve earned it.
+After working through this article, you deserve to give yourself a break.  So go ahead, take a look at (and like) `our old post <../posts/how-zalando-used-bayesian-statistics-to-save-loads-of-money.html>`_ with all the fluffy text and pretty pictures. You’ve earned it.
 
 
 ___________________________________________

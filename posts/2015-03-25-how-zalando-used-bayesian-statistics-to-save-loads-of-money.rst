@@ -1,5 +1,5 @@
-.. title: How Zalando Used Bayesian Statistics to Save Money
-.. slug: how-zalando-used-bayesian-statistics-to-save-money
+.. title: How Zalando Used Bayesian Statistics to Save Loads of Money
+.. slug: how-zalando-used-bayesian-statistics-to-save-loads-of-money
 .. date: 2015/03/26 11:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:

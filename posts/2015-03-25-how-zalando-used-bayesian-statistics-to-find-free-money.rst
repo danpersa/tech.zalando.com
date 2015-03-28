@@ -1,5 +1,5 @@
-.. title: How Zalando Used Bayesian Statistics to Find Free Money
-.. slug: how-zalando-used-bayesian-statistics-to-find-free-money
+.. title: How Zalando Used Bayesian Statistics to Save Money
+.. slug: how-zalando-used-bayesian-statistics-to-save-money
 .. date: 2015/03/26 11:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
@@ -11,7 +11,7 @@
 .. image: warehouse.png
 
 
-Everyone likes free money--and when you’re running a huge business like Zalando, finding free money by making your systems more efficient can mean saving *millions* of Euros. That’s why I’m excited to tell you that the Zalando Data Intelligence team has recently found some free money. In this post, I’ll tell you how.
+Everyone likes to save money--and when you’re running a huge business like Zalando, saving money by making your systems more efficient can mean saving *millions* of Euros. That’s why I’m excited to tell you that the Zalando Data Intelligence team recently found a way to save us piles of money. In this post, I’ll tell you how.
 
 .. TEASER_END
 
@@ -67,7 +67,7 @@ This strategy presents a few problems:
 
 * There are some articles where we don't have enough information to accuracy estimate an article's weight.  Therefore our goal is to calculate not just point estimates but also *confidence intervals* so that we know how sure we can be about our estimate of an article's weight.
 
-Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
+Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-save-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
 
 Results
 =======
@@ -176,7 +176,7 @@ Deriving our new measuring model and verifying that it works took some effort! B
  
  * A reliable way to know the accuracy of our estimations
 
-And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That isn't just free money--that's priceless.
+And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That's priceless.
 
 If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
 

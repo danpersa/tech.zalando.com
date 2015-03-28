@@ -20,7 +20,7 @@ THE GOAL
 
 Until recently, the only way that Zalando’s warehouse workers were able to determine the weights of our hundreds of thousands of items was by weighing each item manually. As you can imagine, this was a labor-intensive, time-consuming and expensive process.
 
-It recently occurred to us that we could greatly simplify our operations by replacing our manual weight estimation process with highly refined data from another, automatic process. Here’s where that free money for Zalando appears: By accurately inferring the individual item weights from the parcel weights, we save A LOT of Euros--and a lot of our workers’ time. 
+It recently occurred to us that we could greatly simplify our operations by replacing our manual weight estimation process with highly refined data from another, automatic process. Here’s where those huge savings for Zalando appears: By accurately inferring the individual item weights from the parcel weights, we save A LOT of Euros--and a lot of our workers’ time. 
 
 THE FREE DATA
 =============
@@ -178,5 +178,5 @@ Deriving our new measuring model and verifying that it works took some effort! B
 
 And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That's priceless.
 
-If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
+If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-save-loads-of-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
 

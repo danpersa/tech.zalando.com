@@ -67,7 +67,7 @@ This strategy presents a few problems:
 
 * There are some articles where we don't have enough information to accuracy estimate an article's weight.  Therefore our goal is to calculate not just point estimates but also *confidence intervals* so that we know how sure we can be about our estimate of an article's weight.
 
-Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-save-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
+Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-save-loads-of-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
 
 Results
 =======

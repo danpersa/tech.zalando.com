@@ -16,9 +16,9 @@ our expertise in deep learning applied to complex problems, such as computer vis
 
 Check out all my posts:
 
- * `How Zalando Used Bayesian Statistics to Find Free Money <../posts/how-zalando-used-bayesian-statistics-to-find-free-money.html>`_
+ * `How Zalando Used Bayesian Statistics to Save Loads of Money <../posts/how-zalando-used-bayesian-statistics-to-save-loads-of-money.html>`_
  
- * `You Too Can Find Free Money: The Details of the Bayesian Model <../posts/you-too-can-find-free-money-the-details-of-the-bayesian-model.html>`_
+ * `You Too Can Save Loads of Money: The Details of the Bayesian Model <../posts/you-too-can-save-loads-of-money-the-details-of-the-bayesian-model.html>`_
 
  * `Defeating the Traveling Salesman Problem for Warehouse Logistics <../posts/defeating-the-travelling-salesman-problem-for-warehouse-logistics.html>`_
 

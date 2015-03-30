@@ -1,6 +1,6 @@
 .. title: How Zalando Used Bayesian Statistics to Save Loads of Money
 .. slug: how-zalando-used-bayesian-statistics-to-save-loads-of-money
-.. date: 2015/03/26 11:00:00
+.. date: 2015/03/26 13:00:00
 .. tags: warehouse logistics, machine learning, Bayesian statistics, Bayesian modeling, Gibbs sampling, statistics, graphical models, optimization, mathjax
 .. link:
 .. description: We describe how we automatically estimate article weights from parcel weights and save a lot of money in the process.
@@ -67,7 +67,7 @@ This strategy presents a few problems:
 
 * There are some articles where we don't have enough information to accuracy estimate an article's weight.  Therefore our goal is to calculate not just point estimates but also *confidence intervals* so that we know how sure we can be about our estimate of an article's weight.
 
-Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-save-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
+Because of Zalando’s massive size and speed of operations, we need a much cleaner, more accurate method. For this, our data intelligence team turned to Bayesian statistics. In our `next tech blog article <../posts/you-too-can-save-loads-of-money-the-details-of-the-bayesian-model.html>`_ we’ll go into the mathematical details of the Baysian model we used.  If you want to see a cool example of statistical modeling in action, the next article is perfect for you. But this is the fluffy non-technical article, so we’ll go straight to showing you how awesome our weight estimation method is.
 
 Results
 =======
@@ -176,7 +176,7 @@ Deriving our new measuring model and verifying that it works took some effort! B
  
  * A reliable way to know the accuracy of our estimations
 
-And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That's priceless.
+And most importantly: our warehouse workers can now focus on getting your fashion to you as quickly as possible. That's isn't just saving money--that's priceless.
 
 If you liked this post, be sure to read (and like) `the next article <../posts/you-too-can-save-loads-of-money-the-details-of-the-bayesian-model.html>`_ with all the great mathematical details of our Bayesian model.
 

@@ -88,7 +88,7 @@ Article Weight Hyper-Priors
 
 .. raw:: html 
   
-  <img src="../images/weight-estimation/model1.jpg" style="float:left; margin-right:10px; margin-top:5px">
+  <img src="../images/weight-estimation/model5.jpg" style="float:left; margin-right:10px; margin-top:5px">
   
 All this wouldn't be Bayesian statistics if we didn't have a prior belief about the article's mean
 weight and precision. Therefore, we introduce priors on :math:`\mu_{X,i}` and :math:`\rho_{X,i}`.

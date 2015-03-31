@@ -21,9 +21,7 @@ A Sneak Peek at Our Model
 
 .. raw:: html
 
-  <object data="../images/weight-estimation/model14.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model14.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model14.jpg" style="float:left; margin-right:10px; margin-top:5px" />
   
 Let’s take a quick look at what the finished model looks like. On the left is a graphical representation [Bishop]_ of the final model, in which we use the Greek letters :math:`\alpha, \beta, \mu` and :math:`\sigma` to represent priors (how we believe the system should behave) and Latin letters like :math:`X, Z, V` and :math:`k` to represent concrete values (for example, the weight of a parcel or item, or the volume of a parcel). The arrows represent dependencies: For example, the weight of a parcel :math:`Z_{j}` depends on the weights of the individual items in that parcel :math:`X_{1j},\dots,X_{L_jj}`.
 
@@ -34,10 +32,8 @@ Parcel Weight and Volume
 
 .. raw:: html 
   
-  <object data="../images/weight-estimation/model1.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model1.jpg" />
-  </object>
-
+  <img src="../images/weight-estimation/model1.jpg" style="float:left; margin-right:10px; margin-top:5px" />
+  
 From the volume scanner we observe the parcel weights :math:`Z_j` and parcel volumes :math:`V_j` of :math:`M` parcels. Because of measurement errors, these are not the true weights and volumes of the parcels--but we can model the errors later on in the process.
 
 Parcel Item Weights
@@ -45,9 +41,7 @@ Parcel Item Weights
 
 .. raw:: html 
   
-  <object data="../images/weight-estimation/model2.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model2.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model2.jpg" style="float:left; margin-right:10px; margin-top:5px" />
   
 In this step, we model the assumption that the weight of a parcel :math:`Z_j`, given the weights of the items contained in that parcel :math:`X_{1j},\dots,X_{L_jj}`, is equal to the sum of the weights of the individual items in that parcel plus a Gaussian error. We use the term "parcel item" to distinguish individual items in a parcel from an "article," which is--in Zalando speak--a SKU. Note that the Gaussian error :math:`\varepsilon_j` doesn't require a zero mean; in this way, we can model the weight of packing material with the mean. 
 
@@ -60,9 +54,7 @@ Prior Information on Parcel Weights
 
 .. raw:: html
   
-  <object data="../images/weight-estimation/model3.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model3.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model3.jpg" style="float:left; margin-right:10px; margin-top:5px" />
   
 Zalando uses :math:`K` distinct package types to send out parcels. Some of these package types we use regularly, and others we use less often. We integrate our knowledge of how often a package type is used into the model by assuming the probability that the :math:`j`-th parcel will be of type :math:`k` is equal to :math:`\pi_k`:
 
@@ -83,9 +75,7 @@ Article Weight
 
 .. raw:: html 
   
-  <object data="../images/weight-estimation/model4.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model4.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model4.jpg" style="float:left; margin-right:10px; margin-top:5px" />
   
 Let’s now switch focus from what we know about parcels to what we know about the hundreds of thousand of items in Zalando's inventory. We know there are :math:`N` different items. Further, we assume that the true (and unknown) weight of the :math:`i`-th article is :math:`X_i`. Lastly, we model the article weight :math:`X_i` as a Gaussian random variable, with mean :math:`\mu_{X,i}` and relative precision :math:`\rho_{X,i}`.  In formulas, this means
 
@@ -98,9 +88,7 @@ Article Weight Hyper-Priors
 
 .. raw:: html 
   
-  <object data="../images/weight-estimation/model5.svg" type="image/svg+xml" style="float:left; margin-right:10px; margin-top:5px">
-    <img src="../images/weight-estimation/model1.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model1.jpg" style="float:left; margin-right:10px; margin-top:5px">
   
 All this wouldn't be Bayesian statistics if we didn't have a prior belief about the article's mean
 weight and precision. Therefore, we introduce priors on :math:`\mu_{X,i}` and :math:`\rho_{X,i}`.
@@ -131,9 +119,7 @@ giving us the model we have been working towards this whole time:
 
 .. raw:: html
   
-  <object data="../images/weight-estimation/model15.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-    <img src="../images/weight-estimation/model15.jpg" />
-  </object>
+  <img src="../images/weight-estimation/model15.jpg" style="display: block; margin-left:auto; margin-right:auto">
   
 This model is optimized by
 

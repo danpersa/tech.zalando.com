@@ -31,9 +31,7 @@ The key here is that we already have *data for free* on the volume and weight of
 
   <table style="border:0px solid white">
    <tr style="border:0px solid white"><td style="border:0px solid white">
-    <object data="../images/weight-estimation/GMM_raw.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-     <img src="../images/weight-estimation/GMM_raw.jpg" />
-    </object>
+    <img src="../images/weight-estimation/GMM_raw.jpg" />
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 1: </b> 
@@ -83,9 +81,7 @@ Many Zalando items have already been weighed manually, so a natural evaluation s
 
   <table style="border:0px solid white">
    <tr style="border:0px solid white"><td style="border:0px solid white">
-    <object data="../images/weight-estimation/estimatevsmeasured.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-     <img src="../images/weight-estimation/estimatevsmeasured.svg" />
-    </object>
+    <img src="../images/weight-estimation/estimatevsmeasured.jpg" />
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 2: </b> 
@@ -110,9 +106,7 @@ Figure 3 shows the results of our manual process, in which we subtracted the mea
 
   <table style="border:0px solid white">
    <tr style="border:0px solid white"><td style="border:0px solid white">
-    <object data="../images/weight-estimation/GMM_net.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-     <img src="../images/weight-estimation/GMM_net.svg" />
-    </object>
+    <img src="../images/weight-estimation/GMM_net.jpg" />
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 3: </b> 
@@ -127,9 +121,7 @@ Instead of using the article weights obtained by the manual process, we used the
 
   <table style="border:0px solid white">
    <tr style="border:0px solid white"><td style="border:0px solid white">
-    <object data="../images/weight-estimation/GMM_final.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-     <img src="../images/weight-estimation/GMM_final.svg" />
-    </object>
+    <img src="../images/weight-estimation/GMM_final.jpg" />
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 4: </b> 
@@ -154,9 +146,7 @@ If a dot is at 1 on the y-axis, the estimated and measured weights are the same.
 
   <table style="border:0px solid white">
    <tr style="border:0px solid white"><td style="border:0px solid white">
-    <object data="../images/weight-estimation/trumpet.svg" type="image/svg+xml" style="display: block; margin-left:auto; margin-right:auto">
-     <img src="../images/weight-estimation/trumpet.svg" />
-    </object>
+    <img src="../images/weight-estimation/trumpet.jpg" />
    </td></tr>
    <caption style="text-align:left; caption-side:bottom">
     <b>Figure 5: </b> 

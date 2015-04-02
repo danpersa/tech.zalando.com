@@ -63,7 +63,8 @@ information. We already have the PID (34140) of the process which hold the conne
 
 As you can see the SRC IP is `10.161.137.203` and the SRC ``TCP`` port is
 `50166`. Now we have to get the current sequence number to attack the target
-``TCP`` stream.
+``TCP`` stream. Disclaimer: You may have to wait a
+while to see a packet. This may depend on the keepalive settings.
 
 .. code-block:: bash
     # DB-Host

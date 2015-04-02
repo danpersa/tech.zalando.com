@@ -37,7 +37,7 @@ Our Tech Ops built a beautiful homemade trophy to reward the participant who pro
    :width: 100%
    :alt: PNG Fallback
 
-Here is our winner Joao, basking in his new-found glory:
+Here is our winner João, basking in his new-found glory:
 
 .. image:: github-stash-workshop-winner-joao.jpg
    :width: 70%

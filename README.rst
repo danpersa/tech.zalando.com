@@ -20,18 +20,33 @@ Please make sure your blog post contains all necessary meta information (in the 
 * teaser image ("..image: my-example-image.jpg")
 
 
-Getting started
+Deploy the blog
 ===============
 
 You need Git and Docker_ to build static HTML (should also work now with latest version of boot2docker and Docker 1.3+):
+
+Important: to deploy on tech.zalando.com_ your public ssh key needs to be deployed there first!
+
+Clone the sources on your local machine (if not done already):
 
 .. code-block:: bash
 
     $ git clone https://github.com/zalando/tech.zalando.com.git
     $ cd tech.zalando.com
+
+Get latest changes from git repository:
+
+.. code-block:: bash
+
+    $ git pull
+
+Build the blog:
+
+.. code-block:: bash
+
     $ docker run -v $(pwd):/workdir -t zalando/nikola build
 
-Now open the generated HTML files in the "output" directory.
+The generated HTML files are in the "output" directory.
 
 You can also use the provided Makefile to achieve the same:
 
@@ -39,6 +54,32 @@ You can also use the provided Makefile to achieve the same:
 
     $ make clean
     $ make
+
+Deploy the blog to tech.zalando.com:
+
+.. code-block:: bash
+
+    $ rsync -av -4 --no-owner --no-group --no-perms output/* root@tech.zalando.com:/data/www/tech.zalando.com/htdocs
+
+
+Hints:
+======
+
+You can create aliases to make deployments even faster:
+
+.. code-block:: bash
+
+    $ alias cleanblog="docker run -v `pwd`:/workdir -t zalando/nikola clean"
+    $ alias buildblog="docker run -v `pwd`:/workdir -t zalando/nikola build"
+    $ alias deployblog="rsync -av -4 --no-owner --no-group --no-perms output/* root@tech.zalando.com:/data/www/tech.zalando.com/htdocs"
+
+Now you can deploy by just typing:
+
+.. code-block:: bash
+
+    $ buildblog
+    $ deployblog
+
 
 Editing files on Windows
 ========================

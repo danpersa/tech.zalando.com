@@ -1,0 +1,1 @@
+Hello! I joined Zalando in February 2015 to evangelize tech and the incredible things our team does. My favorite things about Zalando's tech team: The energy, enthusiasm, down-to-earth attitude, and wealth of talent.

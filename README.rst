@@ -40,6 +40,8 @@ Get latest changes from git repository:
 
 Build the blog:
 
+.. code-block:: bash
+
     $ docker run -v $(pwd):/workdir -t zalando/nikola build
 
 The generated HTML files are in the "output" directory.

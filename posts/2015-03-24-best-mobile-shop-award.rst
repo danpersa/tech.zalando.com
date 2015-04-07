@@ -1,6 +1,6 @@
 .. title: We won the best m
 .. slug: zalando-won-the-best-mobile-shop-award
-.. date: 2015/04/31 08:00:00
+.. date: 2015/05/31 08:00:00
 .. tags: mobile
 .. link:
 .. description: Mobile shop ward

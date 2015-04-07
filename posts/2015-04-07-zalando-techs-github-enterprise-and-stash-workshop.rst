@@ -1,6 +1,6 @@
 .. title: Zalando Tech’s GitHub Enterprise & Stash Workshop
 .. slug: zalando-techs-github-enterprise-and-stash-workshop
-.. date: 2015/04/07 12:00:00
+.. date: 2015/04/07 08:00:00
 .. tags: github, stash, scm, source code management systems, zalando, tech, developer
 .. link:
 .. description: A workshop to get familiar with github enterprise and stash.

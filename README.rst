@@ -25,6 +25,8 @@ Deploy the blog
 
 You need Git and Docker_ to build static HTML (should also work now with latest version of boot2docker and Docker 1.3+):
 
+Important: to deploy on tech.zalando.com your public ssh key needs to be deployed there first!
+
 Clone the sources on your local machine (if not done already):
 
 .. code-block:: bash
@@ -59,6 +61,7 @@ Deploy the blog to tech.zalando.com:
 
     $ rsync -av -4 --no-owner --no-group --no-perms output/* root@tech.zalando.com:/data/www/tech.zalando.com/htdocs
 
+
 Hints:
 ======
 
@@ -76,6 +79,7 @@ Now you can deploy by just typing:
 
     $ buildblog
     $ deployblog
+
 
 Editing files on Windows
 ========================

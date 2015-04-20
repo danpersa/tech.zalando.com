@@ -4,7 +4,7 @@
 .. tags: shell network postgresql postgres howto hack tcp connection keepalive
 .. link:
 .. description: How to Fix What You Can’t Kill: IDLE PostgreSQL connection with TCP ESTABLISHED state with clients that are already gone.
-.. author: Sandor Szücs
+.. author: Sandor Szuecs
 .. type: text
 .. image: binary.png
 
@@ -94,7 +94,8 @@ to break into a TCP stream:
 Because we have full control of our database host, as well as the PID of the process that holds the connection (in this case, ``34140``), we can easily collect all unknown information:
 
 
-.. code-block:: bash
+.. code:: bash
+
         $ # DB-Host
         $ ps fauxww | grep 34140
         postgres 34140  0.5  0.0 13042260 9040 ?           Ss   Apr01   5:13  \_ postgres: robot prod_eventlog_db 10.161.137.203(50166) SELECT
@@ -107,7 +108,8 @@ As you can see, the SRC IP is `10.161.137.203` and the SRC ``TCP`` port is
 Now we have to get the current sequence number to attack the target ``TCP`` stream. You might have to wait a while to see a packet -- this will depend on the keepalive settings (if the default values are used, then not longer than 2 hours):
 
 
-.. code-block:: bash
+.. code:: bash
+
         # DB-Host
         $ tcpdump -vvni any host 10.161.137.203 and port 50166
         10:08:02.679268 IP (tos 0x0, ttl 123, id 10348, offset 0, flags [DF], proto TCP (6), length 41)
@@ -117,14 +119,16 @@ Now we have to get the current sequence number to attack the target ``TCP`` stre
 Our sequence number is `130742508`, which we’ll now use to send a spoofed ``TCP`` packet and stop the stream. ``hping3`` can send arbitrary packets via RAW sockets and also helps us to stop the stream:
 
 
-.. code-block:: bash
+.. code:: bash
+
         $ hping3 -a 10.161.137.203 -s 50166 -p 5432 --rst -M 130742508  10.10.116.76
 
 
 As you can see, in the open ``tcpdump`` session the packet was successfully received:
 
 
-.. code-block:: bash
+.. code:: bash
+
         # running tcpdump on DB-Host
         10:25:41.225359 IP (tos 0x0, ttl 64, id 24896, offset 0, flags [none], proto TCP (6), length 40)
         10.161.137.203.50166 > 10.10.116.76.5432: Flags [R], cksum 0x41f5 (correct), seq 130742508, win 512, length 0

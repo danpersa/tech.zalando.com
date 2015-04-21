@@ -1,7 +1,7 @@
 .. title: How to Fix What You Can't Kill: Undead PostgreSQL queries.
 .. slug: hack-to-terminate-tcp-conn-postgres
 .. date: 2015/04/20 17:30:42
-.. tags: shell network postgresql postgres howto hack tcp connection keepalive
+.. tags: shell, network, postgresql, howto, hack, tcp, connection, keepalive
 .. link:
 .. description: How to Fix What You Can’t Kill: IDLE PostgreSQL connection with TCP ESTABLISHED state with clients that are already gone.
 .. author: Sandor Szuecs

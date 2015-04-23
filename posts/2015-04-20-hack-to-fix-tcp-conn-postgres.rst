@@ -3,7 +3,7 @@
 .. date: 2015/04/20 17:30:42
 .. tags: shell, network, postgresql, howto, hack, tcp, connection, keepalive
 .. link:
-.. description: How to Fix What You Can’t Kill: IDLE PostgreSQL connection with TCP ESTABLISHED state with clients that are already gone.
+.. description: How to Fix What You Can’t Kill: Undead PostgreSQL connection with TCP ESTABLISHED state with clients that are already gone.
 .. author: Sandor Szuecs
 .. type: text
 .. image: binary.png
@@ -31,7 +31,7 @@ We started to investigate and discovered that:
 * recipients of the data were non-existent;
 * query was not killable by ``select pg_terminate_backend($PID)`` call;
 * process of that query was waiting for ``send()`` syscall to finish;
-* the underlying TCP connection was in the TCP ESTABLISHED state, but the client was already gone, so no data was being transmitted over it. Postgres tracks this connection as IDLE.
+* the underlying TCP connection was in the TCP ESTABLISHED state, but the client was already gone, so no data was being transmitted over it.
 
 
 ===========
@@ -73,7 +73,7 @@ To do that you can either
 - send a TCP packet with an ``RST`` flag
 
 
-As we do not expect, that the the client will answer the ``FIN`` flag, sending ``RST`` flag will do the nasty job of closing our ``ESTABLISHED`` TCP connection without waiting for a response from the client.
+As we do not expect, that the client will answer the ``FIN`` flag, sending ``RST`` flag will do the nasty job of closing our ``ESTABLISHED`` TCP connection without waiting for a response from the client.
 
 
 ===========================

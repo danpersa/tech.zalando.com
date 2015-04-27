@@ -1,6 +1,6 @@
 .. title: Shop the Look
 .. slug: shop-the-look
-.. date: 2099/04/21 08:00:00
+.. date: 2015/04/27 16:45:00
 .. tags: zalando, tech
 .. link:
 .. description: Shop the Look allows you to easily locate and buy the individual components making up a look.

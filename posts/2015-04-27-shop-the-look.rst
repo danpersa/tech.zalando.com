@@ -1,4 +1,4 @@
-.. title: Shop the Look
+.. title: The UX Behind Zalando's New 'Shop the Look' Feature
 .. slug: shop-the-look
 .. date: 2015/04/27 14:45:00
 .. tags: shop, design-thinking
@@ -6,7 +6,7 @@
 .. description: Shop the Look allows you to easily locate and buy the individual components making up a look.
 .. author: Erik Schünemann
 .. type: text
-.. image: shop-the-look-phase-4.jpg
+.. image: shop-the-look-teaser.jpg
 
 Here's a common user experience for Zalando customers: *You're checking out a shirt on its product detail page. You notice the full-body model image, which features a complete look, and become completely distracted when you suddenly notice that the model is wearing the exact style of sneakers that you've been looking for! You can't identify the sneaker brand, so you try to use filters to find the correct style in our shop. After clicking through dozens of pages showcasing hundreds of sneaker styles -- unfortunately none of which is the one you're looking for -- you abandon your search. In the end, you've wasted lots of time and haven't bought the shirt, let alone the sneakers.*
 

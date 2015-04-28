@@ -119,12 +119,12 @@ Shop the Look Phase III: Recommend Similar Items
 Shop the Look Phase IV: Get Other Looks
 ---------------------------------------
 
-.. image:: /images/shop-the-look-phase-4.jpg
-   :alt: Shop the Look phase 4
-
 * This feature relates to the proven assumption that users want to see an article in more than one look/styling
 * Users can now check up to six other looks in addition to the look that initially caught their attention
 * We added this feature in late March 2015
+
+.. image:: /images/shop-the-look-phase-4.jpg
+   :alt: Shop the Look phase 4
 
 What Is Next?
 =============

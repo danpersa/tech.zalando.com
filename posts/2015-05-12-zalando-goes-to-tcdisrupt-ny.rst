@@ -15,14 +15,14 @@ Last week a group of Zalandos traveled to New York City to represent Zalando and
 Three teams used our API to create some amazing projects, and two of them presented their work in the final demos:
 
 .. image:: /images/hackdisrupt-project1.png
-:width: 200px
+  :width: 300px
   :target: http://fashionsmash.nyc
   :align: left
 
 `Fashion Smash <http://challengepost.com/software/fashion-smash>`_, a gamification project, won our best-in-show award (GeeCon cameras, drones and Raspberry Pi 2’s). Fashion Smash presents two products side by side and asks the user to choose which product seems more expensive than the other. Very fun and addictive!
 
 .. image:: /images/hackdisrupt-project2.jpg
-:width: 200px
+  :width: 300px
   :target: http://deepfashion.herokuapp.com
   :align: left
 

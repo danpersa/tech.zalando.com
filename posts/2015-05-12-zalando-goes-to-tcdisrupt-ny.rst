@@ -1,6 +1,6 @@
 .. title: Zalando Goes to TechCrunch Disrupt NY
 .. slug: zalando-goes-to-tcdisrupt-ny
-.. date: 2015/06/12 09:00:00
+.. date: 2015/05/12 09:00:00
 .. tags: hackdisrupt, tcdisrupt, hackathon, nyc, zalando
 .. link:
 .. description: Shop the Look allows you to easily locate and buy the individual components making up a look.

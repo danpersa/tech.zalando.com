@@ -1,6 +1,6 @@
 .. title: Reading Groups at Zalando
 .. slug: reading-groups-at-zalando
-.. date: 2015/05/20 08:00:00
+.. date: 2015/05/19 08:00:00
 .. tags: reading-group, tech, community
 .. link:
 .. description: How we organize reading groups at Zalando
